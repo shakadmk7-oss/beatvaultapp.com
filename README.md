@@ -1,6 +1,6 @@
 # BeatVault
 
-The website for **[beatvaultapp.com](https://beatvaultapp.com)**: music apps built by DJ Shaka D.
+The website for **[beatvaultapp.com](https://beatvaultapp.com)**: music apps for listeners and DJs, built by DJ Shaka D. They're starting on Android and Windows PC, with more platforms to come.
 
 | App | Platform | Status |
 |---|---|---|
