@@ -14,8 +14,11 @@ The website for **[beatvaultapp.com](https://beatvaultapp.com)**: music apps bui
 ### About this repo
 This is a plain static site (HTML + CSS) hosted free on GitHub Pages. The app source code is kept in a separate private repo.
 
-- `index.html`: home page and product sections
-- `privacy.html`: privacy policy (the URL you give Google Play)
+- `index.html`: home page (products hub)
+- `player/`: Music Player page, plus `player/privacy/`, the privacy URL to give Google Play
+- `visualiser/`: Visualiser page
+- `privacy/`: website privacy, with links to each app's policy
+- `privacy.html`: redirects to `player/privacy/` (kept so old links still work)
 - `CNAME`: points GitHub Pages at beatvaultapp.com
 
-To add a product, copy a `.card` block in `index.html`.
+To add a product, copy the `player/` folder, edit it, and add a card to `index.html` and a link to `privacy/`.
