@@ -9,6 +9,12 @@
 <meta property="og:url" content="https://beatvaultapp.com/player/">
 <meta name="theme-color" content="#0b0710">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:image" content="https://beatvaultapp.com/img/og-beatvault.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://beatvaultapp.com/img/og-beatvault.jpg">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -37,7 +43,7 @@
       <div class="eyebrow">Android</div>
       <h1 style="font-size:clamp(2rem,5vw,3rem);letter-spacing:-.035em;line-height:1.1;margin-bottom:14px">BeatVault Music Player</h1>
       <p class="lead">Your music, your folders, no streaming and no ads. BeatVault reads the tracks already on your phone and gives you the controls a DJ would want.</p>
-      <div class="tags" style="margin-top:18px"><span class="tag soon">Closed testing · Coming to Google Play</span></div>
+      <div class="tags" style="margin-top:18px"><span class="tag soon">Beta on Google Play</span></div>
       <ul class="features">
         <li><b>Your library, organised</b><span>Browse by songs, artists, albums, genres, years and playlists, and sort up to three levels deep.</span></li>
         <li><b>Edit tags and covers</b><span>Title, artist, album, genre, BPM, key, year and artwork, one song or many at once.</span></li>
@@ -60,12 +66,22 @@
         <a class="btn btn-ghost" href="/player/privacy/">Privacy policy</a>
       </div>
     </div>
-    <div class="phone" aria-hidden="true">
-      <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#140d1c" stroke="#b026ff" stroke-width="2"/><circle cx="32" cy="32" r="22" fill="none" stroke="#2c1f3b" stroke-width="1.5"/><circle cx="32" cy="32" r="15" fill="none" stroke="#2c1f3b" stroke-width="1.5"/><circle cx="32" cy="32" r="9" fill="#b026ff"/><circle cx="32" cy="32" r="2.5" fill="#0b0710"/></svg>
-      <div class="t">Now Playing</div>
-      <div class="a">Your library</div>
-      <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="phone shot">
+      <img src="/img/now-playing.jpg" alt="BeatVault Now Playing screen" width="540" height="1151">
     </div>
+  </div>
+</section>
+
+<section class="gallery-sec">
+  <div class="wrap">
+    <div class="eyebrow">Screenshots</div>
+    <div class="gallery">
+      <figure><img src="/img/library.jpg" alt="Library with BPM and key for every song" width="540" height="1151" loading="lazy"><figcaption>Your library with BPM and key</figcaption></figure>
+      <figure><img src="/img/sort.jpg" alt="Three-level sort: BPM, then key, then year" width="540" height="1151" loading="lazy"><figcaption>Sort by BPM › key › year</figcaption></figure>
+      <figure><img src="/img/editor.jpg" alt="Song editor with Identify, Tap Tempo and Analyze Key" width="540" height="1151" loading="lazy"><figcaption>Edit tags, tap tempo, find the key</figcaption></figure>
+      <figure><img src="/img/bpm-key-hold.jpg" alt="BPM and Key Hold with fade" width="540" height="1151" loading="lazy"><figcaption>Hold BPM and key, set your fade</figcaption></figure>
+    </div>
+    <p class="gallery-note">All tracks and artwork shown are original Shaka D demo material.</p>
   </div>
 </section>
 </main>
