@@ -107,3 +107,6 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-s
 .policies a{display:flex;justify-content:space-between;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
 .policies a:hover{border-color:var(--accent)}
 .policies span{color:var(--muted);font-size:.9rem}
+
+.price{color:var(--muted);font-size:.95rem;margin:-8px 0 22px}
+.price b{color:var(--text,#fff)}
