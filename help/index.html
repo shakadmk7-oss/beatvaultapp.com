@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BeatVault Help</title>
+<meta name="description" content="Help and FAQ for BeatVault Music Player on Android: adding music, sorting, editing songs, playlists, themes, battery and privacy.">
+<meta property="og:title" content="BeatVault Help">
+<meta property="og:url" content="https://beatvaultapp.com/help/">
+<meta name="theme-color" content="#0b0710">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
+<script src="/app-mode.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="BeatVault home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#140d1c" stroke="#b026ff" stroke-width="3"/><circle cx="32" cy="32" r="22" fill="none" stroke="#2c1f3b" stroke-width="2"/><circle cx="32" cy="32" r="15" fill="none" stroke="#2c1f3b" stroke-width="2"/><circle cx="32" cy="32" r="9" fill="#b026ff"/><circle cx="32" cy="32" r="2.5" fill="#0b0710"/></svg>
+      BeatVault
+    </a>
+    <ul>
+      <li class="hide-sm"><a href="/player/">Player</a></li>
+      <li class="hide-sm"><a href="/visualiser/">Visualiser</a></li>
+      <li class="hide-sm"><a href="/help/">Help</a></li>
+      <li><a href="/#testers">Get early access</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap help">
+  <p class="crumb" style="padding:0 0 18px"><a href="/">Home</a> / Help</p>
+  <h1>Help &amp; FAQ</h1>
+  <p class="lead">Answers for BeatVault Music Player. In the app, <b>Support &gt; Report a Bug</b> sends us a problem with the details we need to fix it.</p>
+  <div class="help-search">
+    <input id="q" type="search" placeholder="Search help" autocomplete="off" aria-label="Search help">
+  </div>
+  <p id="none" class="help-none" hidden>No results. Try fewer words, or ask in <a href="https://discord.gg/Tc87EwTEVK" target="_blank" rel="noopener">Discord</a>.</p>
+
+    <section class="faq-group" data-cat="Getting Started">
+      <h2>Getting Started</h2>
+      <details class="faq" id="how-do-i-add-music">
+        <summary>How do I add music?</summary>
+        <div class="faq-a"><p>Open the Library screen and use &quot;Add folder&quot; or &quot;Add song(s)&quot; (top right) to register music on your device.</p></div>
+      </details>
+      <details class="faq" id="why-did-a-song-disappear-after-a-rescan">
+        <summary>Why did a song disappear after a rescan?</summary>
+        <div class="faq-a"><p>Rescan only looks inside folders you&#x27;ve registered. If a track lives outside every registered folder, it&#x27;ll show as missing - add its folder from the Library screen to bring it back.</p></div>
+      </details>
+      <details class="faq" id="which-file-types-can-i-play">
+        <summary>Which file types can I play?</summary>
+        <div class="faq-a"><p>MP3, FLAC, M4A and MP4. MP4 music videos play as audio only - handy for producers who share tracks as videos - with crossfade, playlists and Android Auto just like any other song. If an MP4 has no cover, a frame from its video is used as the cover.</p><p>The automatic first scan finds MP3, FLAC and M4A. To add MP4 videos, use Add folder or Add song(s) in the Library.</p><p>You can edit the details of all of these in the song editor. Saving changes to a large video can take a little longer.</p></div>
+      </details>
+    </section>
+    <section class="faq-group" data-cat="Playback &amp; Mixing">
+      <h2>Playback &amp; Mixing</h2>
+      <details class="faq" id="what-do-bpm-hold-and-key-hold-do">
+        <summary>What do BPM Hold and Key Hold do?</summary>
+        <div class="faq-a"><p>Tap the BPM number on Now Playing to open the BPM &amp; Key Hold sheet.</p><p>BPM Hold plays every song at one steady tempo (BPM = beats per minute) as tracks change, so a listening session keeps the same energy. Key Hold keeps tracks in a compatible musical key, so back-to-back songs don&#x27;t clash - a gentle taste of harmonic mixing.</p><p>Set both from that same sheet. They&#x27;re made for listening, not for replacing a DJ.</p></div>
+      </details>
+      <details class="faq" id="what-does-crossfade-do">
+        <summary>What does Crossfade do?</summary>
+        <div class="faq-a"><p>Fades one song out while the next fades in, so your music flows without gaps or hard cuts. Turn it on and set the fade length from the BPM &amp; Key Hold sheet.</p><p>It&#x27;s a smooth handover, not a DJ mix - a real blend is beatmatched by ear, cued at the right moment and shaped with EQs and faders, and that&#x27;s the DJ&#x27;s craft.</p></div>
+      </details>
+      <details class="faq" id="can-i-change-playback-speed">
+        <summary>Can I change playback speed?</summary>
+        <div class="faq-a"><p>Yes - Now Playing&#x27;s speed icon opens a wheel from 0.25x to 3.00x. This works together with BPM Hold, not instead of it - both can be active at once.</p></div>
+      </details>
+      <details class="faq" id="what-does-the-sleep-timer-do">
+        <summary>What does the Sleep Timer do?</summary>
+        <div class="faq-a"><p>Stops playback automatically - after a set amount of time, at the end of the current track, or at the end of the current queue. Set it from Now Playing&#x27;s sleep-timer icon.</p></div>
+      </details>
+      <details class="faq" id="how-do-i-sort-by-bpm-then-by-key">
+        <summary>How do I sort by BPM, then by key?</summary>
+        <div class="faq-a"><p>Use the numbered sort chips under the search bar - on the Songs tab, or inside any artist, genre, year or playlist.</p><ol><li>Tap the name on chip 1 and pick BPM. Its arrow flips between low-to-high (↑) and high-to-low (↓).</li><li>Tap + Then by… and pick Key. Key now only orders songs that share the same BPM.</li><li>Add a third level the same way if you like - it only orders songs tied on both of the first two.</li></ol><p>Each level has its own arrow. Pick None on level 2 or 3 to remove it, or tap ↺ at the end of the row to go straight back to the default sort. Songs with no BPM, key or year always go to the bottom. Never Played (in level 1&#x27;s menu) is a filter, not a sort - tap its ✕ to turn it off.</p><p>Scroll the sort menu for more fields: Recently Added (newest first with ↓), Play Count, Recently Played, Listening Time and Cover (↓ shows songs missing a cover first).</p></div>
+      </details>
+    </section>
+    <section class="faq-group" data-cat="Editing Songs">
+      <h2>Editing Songs</h2>
+      <details class="faq" id="how-do-i-edit-a-song-s-title-or-artist">
+        <summary>How do I edit a song&#x27;s title or artist?</summary>
+        <div class="faq-a"><p>To edit one song: on Now Playing, tap the pencil next to the title, or long-press the artwork. This opens its editor, where you can change its title and artist.</p><p>To edit several songs at once: select them in the Library list, then use the bulk editor from the selection toolbar.</p></div>
+      </details>
+      <details class="faq" id="can-the-app-fill-in-a-song-s-details-for-me">
+        <summary>Can the app fill in a song&#x27;s details for me?</summary>
+        <div class="faq-a"><p>Yes - it can look the song up online and fill in its details in one go: title, artist, album, album artist, year, track and disc number, composer, producer, label and cover.</p><ol><li>On Now Playing, tap the pencil next to the title, or long-press the artwork, to open the song editor.</li><li>Tap ID (the magnifying glass), under the song&#x27;s folder at the top. The search is filled in from the song&#x27;s details - or from its filename if those are blank - so usually you just tap search.</li><li>Tap the right result - pick the original album or single for the best details. You&#x27;ll see each change as old value → new value; untick anything you want to keep. For the cover, pick Keep current, Use this cover or No cover. Composer, producer and label appear a moment later.</li><li>Genre and copyright are offered too. Genre starts unticked because it comes from community votes - tick it if it looks right. Copyright is built from the year and label, so untick it if the file already has a better one.</li><li>Tap Apply, check the editor, then tap Update, next to ID, to save.</li></ol><p>BPM and key are never changed by this - use Tap Tempo and Analyze Key for those. Details come from MusicBrainz and covers from the Cover Art Archive, so very obscure tracks may not be found, and credits like producer aren&#x27;t listed for every song. If the artist tag is wrong, or the song is a cover version, the app also searches by title alone - those results are marked Broader match. Still not there? Tap Search Google or Google Images under the results to look it up in your browser.</p></div>
+      </details>
+      <details class="faq" id="how-do-i-change-a-song-s-cover-art">
+        <summary>How do I change a song&#x27;s cover art?</summary>
+        <div class="faq-a"><ol><li>On Now Playing, tap the pencil next to the title, or long-press the artwork, to open the song editor.</li><li>Tap the cover.</li><li>Choose from Device to use a photo, or Search Online to find the cover. Search Online works best with the Album box filled in. To delete the cover instead, choose Remove Cover.</li><li>Tap Update to save the change into the song file.</li></ol><p>Search results load 5 at a time to save data - tap Load more for the rest.</p><p>Found a cover in your browser, for example on Google Images? Tap the image to open it full size, hold it and tap Copy image. Then come back and long-press the cover in the song editor (or tap the cover and choose Paste Copied Image), and tap Update to save it. In the bulk editor, tap Change and choose Paste Copied Image, or long-press Change. Search Online works there too - handy for giving a whole album the same cover.</p></div>
+      </details>
+      <details class="faq" id="how-do-i-find-and-remove-duplicate-songs">
+        <summary>How do I find and remove duplicate songs?</summary>
+        <div class="faq-a"><ol><li>Open the profile menu and tap Find Duplicates. The app checks your library for songs with the same artist and title - even when a file has been renamed or has blank tags.</li><li>Tap a group to compare the copies side by side: length, size, quality, cover, folder and filename. Values that differ are highlighted, and ▶ plays a copy so you can check by ear.</li><li>Tick the copies you want to delete, then tap Delete. ★ Best is only a suggestion (highest quality first). You can&#x27;t tick every copy.</li><li>If they aren&#x27;t really duplicates, tap Not duplicates and that group won&#x27;t come back.</li></ol><p>The Similar section lists near-matches (a typo, or a copy with no artist) - check these carefully. Deleted songs go to your phone&#x27;s Trash, where they can be restored for about 30 days.</p><p>To check songs yourself, select 2 to 6 songs in the library, tap ⋮ and choose Compare.</p></div>
+      </details>
+      <details class="faq" id="don-t-know-a-song-s-bpm-can-the-app-work-it-out">
+        <summary>Don&#x27;t know a song&#x27;s BPM - can the app work it out?</summary>
+        <div class="faq-a"><ol><li>On Now Playing, tap the pencil next to the title, or long-press the artwork, to open the song editor.</li><li>Tap the TAP button along with the beat a few times.</li><li>Tap the arrow to fill the calculated BPM into the BPM field.</li></ol></div>
+      </details>
+      <details class="faq" id="can-the-app-detect-a-song-s-musical-key-for-me">
+        <summary>Can the app detect a song&#x27;s musical key for me?</summary>
+        <div class="faq-a"><ol><li>On Now Playing, tap the pencil next to the title, or long-press the artwork, to open the song editor.</li><li>Tap the magnifier to detect the key, then tap the arrow to use it.</li></ol><p>The app detects the key straight from the audio and shows a confidence level. A low-confidence result is flagged as a rough guess, not a certainty - worth double-checking those by ear.</p></div>
+      </details>
+      <details class="faq" id="how-do-i-move-a-song-to-a-different-folder-on-my-device">
+        <summary>How do I move a song to a different folder on my device?</summary>
+        <div class="faq-a"><ol><li>On Now Playing, tap the pencil next to the title, or long-press the artwork, to open the song editor.</li><li>Tap Move and pick a destination folder.</li></ol><p>To move several songs at once, select them in the Library list and use Move from the selection toolbar instead.</p><p>This physically relocates the file on your device, not just inside BeatVault. If a file with the same name already exists at the destination, you&#x27;ll be asked to replace it, skip it, or keep both.</p></div>
+      </details>
+      <details class="faq" id="what-s-the-difference-between-removing-a-song-and-deleting-i">
+        <summary>What&#x27;s the difference between removing a song and deleting it from my device?</summary>
+        <div class="faq-a"><p>The bin icon in the Library&#x27;s selection toolbar only removes a song from BeatVault&#x27;s list - the actual file stays untouched on your device.</p><p>To actually delete the file: open the song editor (on Now Playing, tap the pencil next to the title or long-press the artwork, or select multiple songs and use &quot;Edit Multiple ID3 Tags&quot;), then tap the red bin button. You&#x27;ll get two choices:</p><p>• Move to Trash - recoverable from your device&#x27;s Files app for about 30 days.<br>• Delete Permanently - removed from storage immediately, cannot be undone.</p><p>Either way, the song also leaves your BeatVault library.</p></div>
+      </details>
+    </section>
+    <section class="faq-group" data-cat="Playlists">
+      <h2>Playlists</h2>
+      <details class="faq" id="how-do-i-add-a-song-to-a-playlist-or-create-one">
+        <summary>How do I add a song to a playlist, or create one?</summary>
+        <div class="faq-a"><p>The playlist icon appears on every song row and in Now Playing.</p><p>• Tap once to quick-add the song to your Liked playlist (tap again to remove it).<br>• Double-tap to open the full picker, where you can turn any playlist on or off for that song, or type a new playlist name right there - no separate &quot;create playlist&quot; screen needed.</p></div>
+      </details>
+    </section>
+    <section class="faq-group" data-cat="Appearance">
+      <h2>Appearance</h2>
+      <details class="faq" id="how-do-i-change-the-app-s-look-or-set-a-photo-as-the-backgro">
+        <summary>How do I change the app&#x27;s look, or set a photo as the background?</summary>
+        <div class="faq-a"><p>Open the profile menu &gt; Theme. Pick one of the 6 built-in colour themes or Custom, or tap any theme to edit its own colours (this creates your own Custom copy - the original theme is never changed).</p><p>Background &gt; Photo lets you pick a photo from your device as the app&#x27;s background instead of a flat colour.</p></div>
+      </details>
+      <details class="faq" id="what-s-the-blurred-background-on-now-playing">
+        <summary>What&#x27;s the blurred background on Now Playing?</summary>
+        <div class="faq-a"><p>It&#x27;s an optional effect that shows a soft, blurred version of the current cover behind the whole Now Playing screen. It&#x27;s on by default - turn it off in Theme &gt; Visual Effects &gt; Blurred artwork background.</p></div>
+      </details>
+    </section>
+    <section class="faq-group" data-cat="Troubleshooting &amp; Privacy">
+      <h2>Troubleshooting &amp; Privacy</h2>
+      <details class="faq" id="what-does-the-diagnostic-log-contain">
+        <summary>What does the diagnostic log contain?</summary>
+        <div class="faq-a"><p>A rolling, private record of player events (play/pause/seek/crossfade, that kind of thing) kept only on this device. It never leaves your phone unless you choose to send it.</p></div>
+      </details>
+      <details class="faq" id="music-stops-when-my-screen-is-off-what-can-i-do">
+        <summary>Music stops when my screen is off - what can I do?</summary>
+        <div class="faq-a"><p>Some phones pause or close apps in the background to save battery. Open Support &gt; Battery &amp; background playback and follow the steps for your phone, so BeatVault can keep playing with the screen off.</p></div>
+      </details>
+      <details class="faq" id="the-app-is-draining-my-battery-what-can-i-do">
+        <summary>The app is draining my battery - what can I do?</summary>
+        <div class="faq-a"><p>Open Support &gt; Battery &amp; background playback for steps specific to your phone brand. Many Android phone makers aggressively stop background apps to save power unless you tell the phone to allow BeatVault to keep running (sometimes called &quot;whitelisting&quot;).</p></div>
+      </details>
+    </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 BeatVault · Made by Shaka D</span>
+    <nav>
+      <a href="/player/privacy/">Player privacy</a>
+      <a href="mailto:hello@beatvaultapp.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+<script>
+(function(){
+  var q=document.getElementById('q'), none=document.getElementById('none');
+  var items=[].slice.call(document.querySelectorAll('.faq'));
+  var groups=[].slice.call(document.querySelectorAll('.faq-group'));
+  q.addEventListener('input',function(){
+    var words=q.value.toLowerCase().split(/\s+/).filter(Boolean), shown=0;
+    items.forEach(function(d){
+      var t=d.textContent.toLowerCase();
+      var hit=words.every(function(w){return t.indexOf(w)>=0;});
+      d.hidden=!hit; if(hit) shown++;
+      if(words.length && hit) d.open=false;
+    });
+    groups.forEach(function(g){ g.hidden=!g.querySelector('.faq:not([hidden])'); });
+    none.hidden=shown>0;
+  });
+  if(location.hash){ var d=document.getElementById(location.hash.slice(1)); if(d&&d.tagName==='DETAILS') d.open=true; }
+})();
+</script>
+</body>
+</html>
