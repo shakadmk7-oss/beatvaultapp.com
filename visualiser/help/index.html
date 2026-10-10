@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BeatVault Visualiser Help</title>
+<meta name="description" content="Help for BeatVault Visualiser on Windows: getting the visuals to react to your music, including DJ software that uses ASIO.">
+<meta property="og:title" content="BeatVault Visualiser Help">
+<meta property="og:url" content="https://beatvaultapp.com/visualiser/help/">
+<meta name="theme-color" content="#0b0710">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:image" content="https://beatvaultapp.com/img/og-beatvault.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://beatvaultapp.com/img/og-beatvault.jpg">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="BeatVault home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#140d1c" stroke="#b026ff" stroke-width="3"/><circle cx="32" cy="32" r="22" fill="none" stroke="#2c1f3b" stroke-width="2"/><circle cx="32" cy="32" r="15" fill="none" stroke="#2c1f3b" stroke-width="2"/><circle cx="32" cy="32" r="9" fill="#b026ff"/><circle cx="32" cy="32" r="2.5" fill="#0b0710"/></svg>
+      BeatVault
+    </a>
+    <ul>
+      <li class="hide-sm"><a href="/player/">Player</a></li>
+      <li class="hide-sm"><a href="/visualiser/">Visualiser</a></li>
+      <li class="hide-sm"><a href="/help/">Help</a></li>
+      <li><a href="/#support">Support</a></li>
+      <li><a href="/#testers">Get early access</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap help">
+  <p class="crumb" style="padding:0 0 18px"><a href="/">Home</a> / <a href="/visualiser/">Visualiser</a> / Help</p>
+  <h1>Visualiser Help</h1>
+  <p class="lead">Answers for BeatVault Visualiser on Windows. Can't find what you need? Email <a href="mailto:hello@beatvaultapp.com?subject=Visualiser%20help">hello@beatvaultapp.com</a>.</p>
+
+    <section class="faq-group">
+      <h2>Sound</h2>
+      <!-- Keep answers general: no DJ-software menus or controller models, so they don't go out of date. -->
+      <details class="faq" id="music-is-playing-but-the-visuals-dont-move">
+        <summary>Music is playing but the visuals don't move</summary>
+        <div class="faq-a">
+          <p>In the Visualiser, under <b>Playback device</b>, pick the device you actually hear the music from: your speakers, headphones, TV (HDMI), USB or Bluetooth device, or your DJ controller.</p>
+          <p>Still nothing? Your DJ software is probably using an <b>ASIO</b> driver. ASIO sends the sound straight to your controller and skips Windows, so no app on your PC can hear it. There are three ways round it:</p>
+          <ol>
+            <li><b>Use a Windows output.</b> If your DJ software lets you choose a normal Windows audio device for its output, choose that instead of the ASIO driver.</li>
+            <li><b>Use a virtual audio cable.</b> Install a free virtual audio cable (VB-CABLE is one example), set your DJ software to output to it, and pick that cable under <b>Playback device</b>.</li>
+            <li><b>Use your controller's record or aux output.</b> If your controller has a record or aux output connected to your PC, choose it under <b>Microphone (optional)</b>.</li>
+          </ol>
+          <p>Your DJ software's manual or help pages will show where its audio output setting is.</p>
+        </div>
+      </details>
+    </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 BeatVault · Made by Shaka D</span>
+    <nav>
+      <a href="/visualiser/privacy/">Visualiser privacy</a>
+      <a href="mailto:hello@beatvaultapp.com">Contact</a>
+      <a href="https://ko-fi.com/beatvault" target="_blank" rel="noopener">Support on Ko-fi</a>
+    </nav>
+  </div>
+</footer>
+<script>
+if(location.hash){ var d=document.getElementById(location.hash.slice(1)); if(d&&d.tagName==='DETAILS') d.open=true; }
+</script>
+</body>
+</html>

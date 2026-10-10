@@ -122,7 +122,7 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-s
 .help-search input{width:100%;padding:12px 16px;border-radius:12px;border:1px solid var(--line);background:var(--bg2);color:var(--text);font:inherit}
 .help-search input:focus{outline:none;border-color:var(--accent)}
 .help-none{color:var(--muted);margin-top:18px}
-.help-none a,.faq-a a{color:var(--accent)}
+.help-none a,.faq-a a,.help .lead a,.feat-note a{color:var(--accent)}
 .faq-group{margin-top:30px}
 .faq-group h2{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
 .faq{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:10px}
