@@ -19,6 +19,7 @@ header{position:sticky;top:0;z-index:10;background:rgba(11,7,16,.82);backdrop-fi
 .nav ul a:hover{color:var(--text)}
 .nav ul a{white-space:nowrap}
 @media(max-width:640px){.nav ul{gap:16px;font-size:.88rem}.nav ul .hide-sm{display:none}}
+@media(max-width:380px){.wrap.nav{padding:0 14px}.nav ul{gap:12px;font-size:.82rem}.brand{gap:7px;font-size:1rem}.brand svg{width:26px;height:26px;flex-shrink:0}}
 
 /* hero */
 .hero{padding:96px 0 72px;text-align:center;background:radial-gradient(60% 60% at 50% 0%,rgba(176,38,255,.28),transparent 70%)}
