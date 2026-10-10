@@ -87,7 +87,7 @@ h2{font-size:clamp(1.7rem,4vw,2.4rem);letter-spacing:-.03em;line-height:1.15;mar
 /* footer */
 footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-size:.9rem}
 .foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.foot nav{display:flex;gap:20px}
+.foot nav{display:flex;gap:8px 20px;flex-wrap:wrap}
 .foot a:hover{color:var(--text)}
 
 /* prose (privacy page) */
