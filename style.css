@@ -148,4 +148,9 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-s
 .gallery figure{margin:0}
 .gallery img{width:100%;height:auto;border-radius:18px;border:1px solid var(--line);box-shadow:0 18px 40px rgba(0,0,0,.35)}
 .gallery figcaption{color:var(--muted);font-size:.9rem;margin-top:8px;text-align:center}
+.screen.shot{display:block;overflow:hidden;background:#000;aspect-ratio:auto}
+.screen.shot img{display:block;width:100%;height:auto}
+.gallery.wide{grid-template-columns:repeat(3,1fr)}
+@media(max-width:860px){.gallery.wide{grid-template-columns:1fr}}
+.gallery.wide img{border-radius:12px}
 .gallery-note{color:var(--muted);font-size:.8rem;margin-top:16px;text-align:center}
