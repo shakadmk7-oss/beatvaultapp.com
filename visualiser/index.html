@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>BeatVault Visualiser for PC</title>
-<meta name="description" content="Real-time visuals that react to your music, for DJ sets, live streams and home listening. Free 14-day trial, then a one-off £9.99 licence. Coming soon to the Microsoft Store for Windows PC.">
+<meta name="description" content="Real-time visuals that react to your music, for DJ sets, live streams and home listening. Free 14-day trial, then a one-off £9.99 licence. Available now on the Microsoft Store for Windows PC.">
 <meta property="og:title" content="BeatVault Visualiser for PC">
 <meta property="og:url" content="https://beatvaultapp.com/visualiser/">
 <meta name="theme-color" content="#0b0710">
@@ -47,7 +47,7 @@
       <div class="eyebrow">Windows PC</div>
       <h1 style="font-size:clamp(2rem,5vw,3rem);letter-spacing:-.035em;line-height:1.1;margin-bottom:14px">BeatVault Visualiser</h1>
       <p class="lead">Turn whatever's playing into live visuals that react to the beat. Made for DJ sets, live streams and a big screen at home.</p>
-      <div class="tags" style="margin-top:18px"><span class="tag soon">Coming soon to the Microsoft Store</span></div>
+      <div class="tags" style="margin-top:18px"><span class="tag live">Available on the Microsoft Store</span></div>
       <ul class="features">
         <li><b>Reacts to any sound on your PC</b><span>Pick any playback device: speakers, headphones, HDMI, USB or Bluetooth. DJ software, Spotify, YouTube, games, anything playing. No "Stereo Mix" or extra hardware needed.</span></li>
         <li><b>Add your microphone</b><span>Optionally mix in a mic, with its own level control and meter.</span></li>
@@ -60,7 +60,7 @@
       <p class="feat-note">Using DJ software with an ASIO driver? Route it through a virtual audio cable so Windows can hear it. <a href="/visualiser/help/#music-is-playing-but-the-visuals-dont-move">How to fix it</a></p>
       <p class="price"><b>Free for 14 days</b> with every feature, then a one-off <b>£9.99 lifetime licence</b> for one PC. No subscription, no ads. Requires Windows 10 or 11 (64-bit).</p>
       <div class="btns" style="justify-content:flex-start">
-        <a class="btn btn-primary" href="mailto:hello@beatvaultapp.com?subject=Visualiser%20updates">Get notified</a>
+        <a class="btn btn-primary" href="https://apps.microsoft.com/detail/9PHCHMT3XS13" target="_blank" rel="noopener">Get it from Microsoft Store</a>
         <a class="btn btn-ghost" href="/visualiser/help/">Help</a>
         <a class="btn btn-ghost" href="/visualiser/privacy/">Privacy policy</a>
       </div>
@@ -71,10 +71,15 @@
 <section class="gallery-sec">
   <div class="wrap">
     <div class="eyebrow">Screenshots</div>
-    <div class="gallery wide">
-      <figure><img src="/img/visualiser-bars.jpg" alt="Neon bars reacting to the music, with the main colour palette" width="1600" height="957" loading="lazy"><figcaption>Neon bars with peak dots</figcaption></figure>
-      <figure><img src="/img/visualiser-radial.jpg" alt="Radial pulse over Matrix rain, with a neon border and wormhole" width="1600" height="960" loading="lazy"><figcaption>Layer effects: radial pulse over Matrix</figcaption></figure>
-      <figure><img src="/img/visualiser-cosmic.jpg" alt="Scope line over the Cosmic Background and sparkles" width="1600" height="956" loading="lazy"><figcaption>Scope line on a cosmic backdrop</figcaption></figure>
+    <div class="carousel" aria-roledescription="carousel" aria-label="Visualiser screenshots">
+      <div class="car-track" tabindex="0">
+        <figure class="car-slide" aria-label="1 of 3"><img src="/img/visualiser-bars.jpg" alt="Neon bars reacting to the music, with the main colour palette" width="1600" height="957"><figcaption>Neon bars with peak dots</figcaption></figure>
+        <figure class="car-slide" aria-label="2 of 3"><img src="/img/visualiser-radial.jpg" alt="Radial pulse over Matrix rain, with a neon border and wormhole" width="1600" height="960" loading="lazy"><figcaption>Layer effects: radial pulse over Matrix</figcaption></figure>
+        <figure class="car-slide" aria-label="3 of 3"><img src="/img/visualiser-cosmic.jpg" alt="Scope line over the Cosmic Background and sparkles" width="1600" height="956" loading="lazy"><figcaption>Scope line on a cosmic backdrop</figcaption></figure>
+      </div>
+      <button class="car-btn car-prev" type="button" aria-label="Previous screenshot">&#8249;</button>
+      <button class="car-btn car-next" type="button" aria-label="Next screenshot">&#8250;</button>
+      <div class="car-dots"></div>
     </div>
   </div>
 </section>
@@ -90,5 +95,21 @@
     </nav>
   </div>
 </footer>
+<script>
+(function(){
+  var c=document.querySelector('.carousel'); if(!c) return;
+  var track=c.querySelector('.car-track'), slides=[].slice.call(c.querySelectorAll('.car-slide')), dots=c.querySelector('.car-dots');
+  function cur(){ return Math.round(track.scrollLeft/track.clientWidth); }
+  function go(i){ i=(i+slides.length)%slides.length; track.scrollTo({left:i*track.clientWidth,behavior:'smooth'}); mark(i); }
+  slides.forEach(function(_,i){ var b=document.createElement('button'); b.type='button'; b.setAttribute('aria-label','Show screenshot '+(i+1)); b.onclick=function(){go(i)}; dots.appendChild(b); });
+  function mark(i){ if(i===undefined) i=cur(); [].forEach.call(dots.children,function(d,j){ d.setAttribute('aria-current', j===i ? 'true' : 'false'); }); }
+  c.querySelector('.car-prev').onclick=function(){go(cur()-1)};
+  c.querySelector('.car-next').onclick=function(){go(cur()+1)};
+  track.addEventListener('keydown',function(e){ if(e.key==='ArrowLeft'){e.preventDefault();go(cur()-1)} if(e.key==='ArrowRight'){e.preventDefault();go(cur()+1)} });
+  // Swipes and trackpad scrolls: re-mark once the scroll settles.
+  track.addEventListener('scroll',function(){ clearTimeout(track._t); track._t=setTimeout(function(){mark()},150); });
+  mark();
+})();
+</script>
 </body>
 </html>
