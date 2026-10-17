@@ -28,7 +28,7 @@
 <main class="wrap prose">
   <p class="crumb" style="padding:0 0 18px"><a href="/">Home</a> / <a href="/visualiser/">Visualiser</a> / Privacy</p>
   <h1>Privacy Policy</h1>
-  <p class="date">BeatVault Visualiser (Windows) · Last updated 10 October 2026</p>
+  <p class="date">BeatVault Visualiser (Windows) · Last updated 17 October 2026</p>
 
   <p>BeatVault Visualiser ("the app") is made by BeatVault (Shaka D). This policy explains what the app does with your information.</p>
 
@@ -49,14 +49,18 @@
   <h2>Free trial and licence key</h2>
   <p>The app includes a 14-day free trial. After that, it needs a licence key, which you buy from us separately.</p>
   <ul>
-    <li><b>Machine ID:</b> the app shows a short code, your Machine ID, so we can make a licence key that works on your PC. It is made by one-way scrambling (hashing) an ID that Windows gives your PC, so it can't be turned back into that ID and doesn't identify you. The app only sends it when you choose to buy: the <b>Buy a licence</b> button adds it to the checkout link, so it reaches us with your order. Otherwise it never leaves your PC.</li>
+    <li><b>Machine ID:</b> the app shows a short code, your Machine ID, so we can make a licence key that works on your PC. It is made by one-way scrambling (hashing) an ID that Windows gives your PC, so it can't be turned back into that ID and doesn't identify you. The <b>Buy a licence</b> and pack <b>Get</b> buttons add it to the checkout link, so it reaches us with your order, and the licence check below sends it too.</li>
     <li><b>Trial date:</b> the date your trial started is stored on your PC only, so the app can count the 14 days.</li>
-    <li><b>Licence key:</b> your key contains the name you bought under, your Machine ID and the date it was issued. It is saved on your PC and checked there, without going online.</li>
+    <li><b>Licence key:</b> your key contains the name you bought under, your Machine ID, the date it was issued and the effect packs it includes. It is saved on your PC and checked there.</li>
   </ul>
 
+  <h2>Licence check</h2>
+  <p>So that a purchase unlocks the app by itself, and a refunded purchase is removed, the app asks our licence server (<b>license.beatvaultapp.com</b>) what your PC should have: when it starts, every few hours while it runs, when you open the licence panel, and every few seconds for a while after you click a buy button. Each check sends only your Machine ID and your current licence key, and gets back an updated key if there is one. It sends nothing about your music, your screen or your use of the app. If your PC is offline, the app keeps working as before and checks again later.</p>
+  <p>The server keeps, for each purchase, your Machine ID, what you bought, your name and email address as given at checkout, the amount and whether it was refunded, so it can issue and withdraw keys. It runs on Cloudflare, which stores it for us.</p>
+
   <h2>What we collect</h2>
-  <p>The app itself collects nothing: no account sign-up, no advertising and no analytics. It doesn't send any personal data anywhere.</p>
-  <p>If you buy a licence, you give us your name, your email address and your Machine ID, and Stripe, which handles the checkout, confirms your order to us. We use these only to send your licence key, re-issue it if you change PC, answer your questions and keep the business records UK tax law requires. We keep sale records for as long as that law requires (currently about 6 years), then delete them. We never sell or share them, except with Stripe for your purchase and when the law requires it.</p>
+  <p>The app itself collects nothing beyond the licence check above: no account sign-up, no advertising and no analytics.</p>
+  <p>If you buy a licence, you give us your name, your email address and your Machine ID, and Stripe, which handles the checkout, confirms your order to us. We use these only to issue your licence key, re-issue it if you change PC, answer your questions and keep the business records UK tax law requires. We keep sale records for as long as that law requires (currently about 6 years), then delete them. We never sell or share them, except with Stripe for your purchase, Cloudflare to run the licence server, and when the law requires it.</p>
   <p>Payments are handled by <b>Stripe</b>, which sells the licence on our behalf (it appears at checkout and on bank statements as "Onelink") and collects any sales tax or VAT. Stripe processes your payment details under its own <a href="https://stripe.com/privacy" style="color:var(--accent)">privacy policy</a>. We never see your full card or bank details.</p>
 
   <h2>Microsoft services</h2>
@@ -66,7 +70,7 @@
   </ul>
 
   <h2>Deleting your data</h2>
-  <p>Your settings, trial date and licence key stay on your PC. Uninstalling the app deletes them. If you remove your licence key, you can paste it in again from your email.</p>
+  <p>Your settings, trial date and licence key stay on your PC. Uninstalling the app deletes them. If you reinstall on the same PC, the app gets your licence again by itself.</p>
   <p>To see or delete the sale record we hold about you, email us. We'll delete everything except what UK tax law requires us to keep.</p>
 
   <h2>Children</h2>
