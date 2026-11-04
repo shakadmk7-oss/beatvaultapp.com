@@ -64,6 +64,7 @@ h2{font-size:clamp(1.7rem,4vw,2.4rem);letter-spacing:-.03em;line-height:1.15;mar
 .features li{list-style:none;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 .features b{display:block;font-size:.98rem;margin-bottom:2px}
 .features span{color:var(--muted);font-size:.9rem}
+.features .pro{font-style:normal;font-size:.68rem;font-weight:700;letter-spacing:.04em;color:#d58bff;border:1px solid var(--accent);border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:2px}
 .phone{margin:0 auto;width:min(300px,80%);aspect-ratio:9/19;border-radius:38px;border:10px solid #241832;background:linear-gradient(180deg,#1b1027,#0b0710);box-shadow:0 30px 80px rgba(176,38,255,.25);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:24px}
 .phone svg{width:62%}
 .phone .t{font-weight:700}.phone .a{color:var(--muted);font-size:.85rem;margin-top:-16px}
