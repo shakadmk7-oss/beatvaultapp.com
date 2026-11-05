@@ -136,17 +136,48 @@
         <div class="faq-a"><p>It&#x27;s an optional effect that shows a soft, blurred version of the current cover behind the whole Now Playing screen. It&#x27;s on by default - turn it off in Theme &gt; Visual Effects &gt; Blurred artwork background.</p></div>
       </details>
     </section>
+    <section class="faq-group" data-cat="Why does it do that?">
+      <h2>Why does it do that?</h2>
+      <details class="faq" id="why-does-my-music-pause-when-i-open-another-app" data-keywords="stops cuts out interrupted remote desktop anydesk teamviewer rdp video youtube tiktok instagram game voice note whatsapp call audio focus resume">
+        <summary>Why does my music pause when I open another app?</summary>
+        <div class="faq-a"><p>Android lets only one app play sound at a time. When another app starts its own sound - a video, a game, a voice note, a call, or a remote desktop app streaming your computer&#x27;s sound - Android tells BeatVault to step aside, and it pauses.</p><p>For short interruptions (a notification sound, a voice note, a call, sat-nav directions) BeatVault carries on by itself when they finish. If the other app keeps its sound going, like a remote desktop session, BeatVault stays paused until you press play.</p><p>Tip: if you don&#x27;t need sound from the other app, turn it off there. In Microsoft Remote Desktop, set the connection&#x27;s sound to &quot;Don&#x27;t play&quot;; in AnyDesk or TeamViewer, turn off audio. BeatVault then keeps playing.</p></div>
+      </details>
+      <details class="faq" id="why-does-music-pause-when-my-headphones-disconnect" data-keywords="bt bluetooth earbuds earphones headset airpods buds unplug disconnected car stereo speaker loud out loud stops">
+        <summary>Why does music pause when my headphones or Bluetooth disconnect?</summary>
+        <div class="faq-a"><p>That&#x27;s on purpose. When headphones are unplugged or a Bluetooth device drops out, Android warns apps that the sound is about to come out of the phone&#x27;s speaker, and BeatVault pauses, so your music never suddenly plays out loud on the bus or in the office.</p><p>Press play when you&#x27;re ready - on the phone, the notification, or the new device.</p></div>
+      </details>
+      <details class="faq" id="why-does-the-sound-switch-between-my-headphones-and-my-car" data-keywords="bt bluetooth car stereo headunit head unit earbuds headphones speaker output device switch handover takes over connect connected auto">
+        <summary>Why does the sound switch between my headphones and my car?</summary>
+        <div class="faq-a"><p>Android decides where sound goes, not BeatVault. Usually the device that connected most recently takes over: get in the car while wearing earbuds, and the car normally takes over once it connects.</p><p>If the sound is going to the wrong place, swipe down from the top of the screen and pick the device from the media output panel (or open your phone&#x27;s Bluetooth settings). If a device drops out, BeatVault pauses (see above), so press play once the new one is connected.</p></div>
+      </details>
+      <details class="faq" id="does-auto-dj-mix-work-if-a-song-has-no-bpm" data-keywords="beat blend beatblend auto dj mix bpm tempo blank empty missing tag id3 beatmatch beats transition crossfade">
+        <summary>Does Auto DJ Mix work if a song has no BPM?</summary>
+        <div class="faq-a"><p>Yes. Auto DJ Mix (called Beat Blend in older versions) listens to each song itself to find its beats, so it doesn&#x27;t need a BPM tag. A BPM tag helps it lock onto the right tempo faster and more reliably, especially on fast music like drum &amp; bass.</p><p>If the app can&#x27;t find a steady beat, or the two songs&#x27; tempos are too far apart (more than about 8%), it does a normal crossfade for that change instead.</p><p>For the best mixes, fill in the BPM: open the song editor, tap TAP along with the beat, then tap the arrow to fill it in.</p></div>
+      </details>
+      <details class="faq" id="why-don-t-covers-load-on-mobile-data" data-keywords="artwork album art cover image search online loading fails blocked network 4g 5g three ee vodafone o2 wifi wi-fi">
+        <summary>Why don&#x27;t covers load on mobile data?</summary>
+        <div class="faq-a"><p>Some mobile networks block the site that some album covers come from. BeatVault already tries a second route automatically when that happens. If covers still won&#x27;t load, try again on Wi-Fi.</p></div>
+      </details>
+      <details class="faq" id="why-do-some-songs-have-no-cover" data-keywords="artwork album art cover missing blank grey placeholder image picture">
+        <summary>Why do some songs have no cover?</summary>
+        <div class="faq-a"><p>BeatVault shows the cover saved inside the song file, and some files simply don&#x27;t have one. Add one from the song editor: tap the cover, choose Search Online or from Device, then tap Update to save it into the file.</p></div>
+      </details>
+      <details class="faq" id="where-are-the-music-controls-on-my-lock-screen" data-keywords="lock screen lockscreen notification media controls player control centre center quick settings oneplus oppo realme coloros oxygenos missing hidden">
+        <summary>Where are the music controls on my lock screen or notifications?</summary>
+        <div class="faq-a"><p>Some phones (for example OnePlus, OPPO and realme) show the music player in the quick settings panel you get by swiping down, not in the notification list.</p><p>If the controls are missing from the lock screen, look in your phone&#x27;s lock screen settings for an option to show media controls, and make sure it&#x27;s on.</p></div>
+      </details>
+    </section>
     <section class="faq-group" data-cat="Troubleshooting &amp; Privacy">
       <h2>Troubleshooting &amp; Privacy</h2>
       <details class="faq" id="what-does-the-diagnostic-log-contain">
         <summary>What does the diagnostic log contain?</summary>
         <div class="faq-a"><p>A rolling, private record of player events (play/pause/seek/crossfade, that kind of thing) kept only on this device. It never leaves your phone unless you choose to send it.</p></div>
       </details>
-      <details class="faq" id="music-stops-when-my-screen-is-off-what-can-i-do">
+      <details class="faq" id="music-stops-when-my-screen-is-off-what-can-i-do" data-keywords="closes closed shuts down killed crash background battery optimisation optimization sleeping stops pauses">
         <summary>Music stops when my screen is off - what can I do?</summary>
         <div class="faq-a"><p>Some phones pause or close apps in the background to save battery. Open Support &gt; Battery &amp; background playback and follow the steps for your phone, so BeatVault can keep playing with the screen off.</p></div>
       </details>
-      <details class="faq" id="the-app-is-draining-my-battery-what-can-i-do">
+      <details class="faq" id="the-app-is-draining-my-battery-what-can-i-do" data-keywords="battery drain power usage hot whitelist">
         <summary>The app is draining my battery - what can I do?</summary>
         <div class="faq-a"><p>Open Support &gt; Battery &amp; background playback for steps specific to your phone brand. Many Android phone makers aggressively stop background apps to save power unless you tell the phone to allow BeatVault to keep running (sometimes called &quot;whitelisting&quot;).</p></div>
       </details>
@@ -169,14 +200,31 @@
   var q=document.getElementById('q'), none=document.getElementById('none');
   var items=[].slice.call(document.querySelectorAll('.faq'));
   var groups=[].slice.call(document.querySelectorAll('.faq-group'));
+  // Searches the question, answer and each entry's hidden data-keywords.
+  // Word endings are trimmed (pausing/paused/pauses all match pause) and a
+  // few everyday words are widened (bt finds bluetooth).
+  var SYN={bt:'bluetooth',earbuds:'headphones',earphones:'headphones',buds:'headphones',art:'cover',artwork:'cover',
+    stop:'pause',stops:'pause',stopped:'pause',stopping:'pause',cuts:'pause',dj:'mix',blend:'mix',tempo:'bpm'};
+  // Everyday question words are skipped, so "why does my music stop" works.
+  var STOP={};
+  'why what when where how does do did is it its my me the and or to of in on a an can will keep keeps app beatvault no not'.split(' ').forEach(function(w){STOP[w]=1;});
+  function stem(w){ return w.replace(/(ing|ed|es|s)$/,'').replace(/(.)\1$/,'$1'); }
+  var texts=items.map(function(d){
+    var t=(d.textContent+' '+(d.getAttribute('data-keywords')||'')).toLowerCase();
+    return ' '+t.split(/[^a-z0-9]+/).map(stem).join(' ')+' '+t;
+  });
+  function has(t,w){
+    var alts=[w,stem(w)]; if(SYN[w]) alts.push(SYN[w],stem(SYN[w]));
+    return alts.some(function(a){ return a.length>1 && t.indexOf(a)>=0; });
+  }
   q.addEventListener('input',function(){
-    var words=q.value.toLowerCase().split(/\s+/).filter(Boolean), shown=0;
-    items.forEach(function(d){
-      var t=d.textContent.toLowerCase();
-      var hit=words.every(function(w){return t.indexOf(w)>=0;});
-      d.hidden=!hit; if(hit) shown++;
+    var words=q.value.toLowerCase().split(/[^a-z0-9]+/).filter(function(w){return w.length>1 && !STOP[w];}), shown=0, last=null;
+    items.forEach(function(d,i){
+      var hit=words.every(function(w){return has(texts[i],w);});
+      d.hidden=!hit; if(hit){ shown++; last=d; }
       if(words.length && hit) d.open=false;
     });
+    if(words.length && shown===1) last.open=true;
     groups.forEach(function(g){ g.hidden=!g.querySelector('.faq:not([hidden])'); });
     none.hidden=shown>0;
   });
