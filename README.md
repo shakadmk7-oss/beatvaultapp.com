@@ -4,10 +4,10 @@ The website for **[beatvaultapp.com](https://beatvaultapp.com)**: music apps for
 
 | App | Platform | Status |
 |---|---|---|
-| **BeatVault Music Player**: an offline music player with DJ features (tempo sync, crossfade, true shuffle) | Android | Closed testing, coming to Google Play |
+| **BeatVault Music Player**: an offline music player with DJ features (tempo sync, crossfade, true shuffle) | Android | On Google Play |
 | **BeatVault Visualiser**: real-time visuals that react to your music | Windows PC | Coming soon |
 
-👉 **Want early access?** [Join the tester group](https://groups.google.com/g/beatvault-testers), then install the app from Google Play.
+👉 **Get it:** [BeatVault Music Player on Google Play](https://play.google.com/store/apps/details?id=com.beatvault.dj)
 
 ---
 
