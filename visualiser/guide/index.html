@@ -89,6 +89,23 @@
         <p>Keep the Visualiser open with <b>Start</b> pressed: the browser window gets the music from it.</p>
       </div>
     </details>
+    <details class="faq" id="add-to-obs">
+      <summary>Add to OBS in one click</summary>
+      <div class="faq-a">
+        <ol>
+          <li>Open OBS (version 28 or later). In OBS, go to <b>Tools</b>, <b>WebSocket Server Settings</b> and tick <b>Enable WebSocket server</b>.</li>
+          <li>In the Visualiser, press <b>Start</b>, then click <b>Add to OBS</b> under the preview.</li>
+          <li>If OBS has a password, a box appears. Copy the password from OBS (<b>Tools</b>, <b>WebSocket Server Settings</b>, <b>Show Connect Info</b>), paste it in and click <b>Add to OBS</b> again.</li>
+        </ol>
+        <p>The Visualiser adds a <b>BeatVault Visualiser</b> Browser source to the scene that is on air, at your OBS canvas size. A tall OBS canvas gets the Vertical setup, a wide one the Landscape setup.</p>
+      </div>
+    </details>
+    <details class="faq" id="landscape-and-vertical">
+      <summary>Landscape and Vertical canvases</summary>
+      <div class="faq-a">
+        <p>The <b>Landscape</b> and <b>Vertical</b> tabs above the preview hold two setups: one for usual streams and screens, and one for TikTok, YouTube Shorts and Twitch vertical. Each has its own size and its own layer positions. Settings marked ⇅ are set separately for each canvas.</p>
+      </div>
+    </details>
     <details class="faq" id="obs-and-streaming-apps">
       <summary>In OBS, Streamlabs, XSplit or vMix</summary>
       <div class="faq-a">
@@ -104,6 +121,21 @@
 
   <section class="faq-group">
     <h2>Effects and colours</h2>
+    <details class="faq" id="main-visualiser">
+      <summary>Main visualisers</summary>
+      <div class="faq-a">
+        <p>Pick the look that moves to the music from the <b>Main visualiser</b> list at the top of the left panel. Its own settings are underneath. Tick <b>Add a second visualiser</b> or <b>Add a third visualiser</b> to run more than one, each with its own look and settings.</p>
+      </div>
+    </details>
+    <details class="faq" id="layers-and-designer">
+      <summary>Layers and placing things on the preview</summary>
+      <div class="faq-a">
+        <ul>
+          <li><b>Layers</b>: every visualiser and effect that is on shows in the Layers list. The top one draws over the rest. Drag to reorder, and set each layer's visibility, opacity and blend mode.</li>
+          <li><b>On the preview</b>: click a layer on the preview to pick it, then drag it to move it or drag its handles to resize it. It snaps to the edges and centre lines, and <b>Fill screen</b> and <b>Centre</b> put it back quickly. Positions are kept separately for the Landscape and Vertical canvases.</li>
+        </ul>
+      </div>
+    </details>
     <details class="faq" id="effects">
       <summary>Adding and layering effects</summary>
       <div class="faq-a">
@@ -115,11 +147,17 @@
       <summary>Colours, the eyedropper and saved schemes</summary>
       <div class="faq-a">
         <ul>
-          <li><b>Main palette</b>: the colours for bass, mid, treble and peaks. Click a colour box to change it.</li>
+          <li><b>Main palette</b>: the colours for bass, mid, treble and peaks. Click a colour box to change it, and set its opacity in the colour window.</li>
           <li><b>Eyedropper</b>: in the colour window, use the eyedropper to copy a colour from anywhere on your screen, such as your logo.</li>
           <li><b>Beat flash</b> adds a flash of colour on the beat. <b>Monochrome</b> turns everything black and white.</li>
           <li><b>Saved colour schemes</b>: type a name and click <b>Save</b> to keep your colours, then pick it later to switch back. <b>Reset all colours</b> returns to the defaults.</li>
         </ul>
+      </div>
+    </details>
+    <details class="faq" id="looks">
+      <summary>Saving and sharing Looks</summary>
+      <div class="faq-a">
+        <p>Open <b>Looks</b> on the left panel, type a name and click <b>Save</b>. A Look keeps everything: effects, settings, colours and both canvases. Pick it later to switch back. <b>Export</b> saves the chosen Look as a file to keep or share, and <b>Import</b> adds a Look from a file.</p>
       </div>
     </details>
   </section>
