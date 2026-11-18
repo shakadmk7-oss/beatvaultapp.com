@@ -151,6 +151,7 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-s
 .gallery figcaption{color:var(--muted);font-size:.9rem;margin-top:8px;text-align:center}
 .carousel{position:relative;margin-top:14px}
 .feature .carousel{align-self:start;margin-top:8px;min-width:0}
+@media(min-width:861px){.feature .carousel{position:sticky;top:84px}}
 .car-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;border-radius:14px}
 .car-track::-webkit-scrollbar{display:none}
 .car-track:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
