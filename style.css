@@ -51,6 +51,7 @@ h2{font-size:clamp(1.7rem,4vw,2.4rem);letter-spacing:-.03em;line-height:1.15;mar
 .tags{display:flex;gap:8px;flex-wrap:wrap}
 .tag{font-size:.75rem;font-weight:600;padding:4px 10px;border-radius:999px;background:var(--bg2);border:1px solid var(--line);color:var(--muted)}
 .tag.live{color:#7ef0b0;border-color:#1f5c3d}
+a.tag{text-decoration:none}a.tag.live:hover{background:#12301f;border-color:#2f8a5b}
 .tag.soon{color:#ffc977;border-color:#5c461f}
 .card .more{margin-top:auto;color:var(--accent);font-weight:600}
 .card.placeholder{border-style:dashed;background:transparent;justify-content:center;align-items:center;text-align:center;min-height:240px}
