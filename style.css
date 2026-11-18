@@ -62,6 +62,10 @@ a.tag{text-decoration:none}a.tag.live:hover{background:#12301f;border-color:#2f8
 @media(max-width:860px){.feature{grid-template-columns:1fr;gap:36px}}
 .features{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:28px 0}
 @media(max-width:520px){.features{grid-template-columns:1fr}}
+.more-features{padding-top:0}
+.features.wide{grid-template-columns:repeat(3,1fr);margin-top:0}
+@media(max-width:860px){.features.wide{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.features.wide{grid-template-columns:1fr}}
 .features li{list-style:none;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 .features b{display:block;font-size:.98rem;margin-bottom:2px}
 .features span{color:var(--muted);font-size:.9rem}
@@ -152,7 +156,6 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-s
 .gallery figcaption{color:var(--muted);font-size:.9rem;margin-top:8px;text-align:center}
 .carousel{position:relative;margin-top:14px}
 .feature .carousel{align-self:start;margin-top:8px;min-width:0}
-@media(min-width:861px){.feature .carousel{position:sticky;top:84px}}
 .car-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;border-radius:14px}
 .car-track::-webkit-scrollbar{display:none}
 .car-track:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
